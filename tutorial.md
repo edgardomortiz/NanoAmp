@@ -1,7 +1,7 @@
 # How to analyze Nanopore sequencing data with NanoAmp
 
 <p align="right">
-Version: v20250128<br>
+Version: v20250211<br>
 Author: Gentaro Shigita
 </p>
 
@@ -45,7 +45,7 @@ conda activate nanoamp
 >
 > ```sh
 > mkdir 01_basecalled_demultiplexed
-> for barcode in 00_raw_data/*/*/*/fastq_*/*; do
+> for barcode in 00_raw_data/*/*/fastq_*/*; do
 >   cat ${barcode}/*.fastq.gz >> 01_basecalled_demultiplexed/${barcode##*/}.fastq.gz
 > done
 > ```
